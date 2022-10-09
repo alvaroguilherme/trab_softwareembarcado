@@ -1,0 +1,102 @@
+<html>
+
+    <head>
+        <title>Previsão do Tempo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,">
+        <script src="https://kit.fontawesome.com/3f5dd28206.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <style>
+            /* meter {
+                -webkit-writing-mode: horizontal-tb !important;
+                appearance: auto;
+                box-sizing: border-box;
+                display: inline-block;
+                height: 5em;
+                width: 13em;
+                vertical-align: -1.0em;
+                -webkit-user-modify: read-only !important;
+            } */
+
+            html {
+                font-family: Helvetica;
+                display: inline-block;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+            h1 {
+                color: #0F3376;
+                padding: 2vh;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            table {
+                margin: auto;
+            }
+
+            td {
+                padding: 7px;
+            }
+
+
+            .fa-sun {
+                color: #ffd94d;
+            }
+
+            .fa-droplet {
+                color: blue;
+            }
+        </style>
+        <script>
+            setInterval(updateValues, 2000);
+
+            function updateValues() {
+                location.reload();
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Previsão do Tempo</h1>
+        <h1>Juiz de Fora, Minas Gerais</h1>
+        <h2>BR</h2>
+
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-sun"></i>
+                        <p>Temperatura (°C)</p>
+                    </td>
+                    <td>
+                        <strong> %i </strong>
+                        <!-- <meter id="fuel" min="0" max="99" low="30" high="70" optimum="80" value="%i">
+                            at 50/100
+                        </meter> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-droplet"></i>
+                        <p>Umidade (%%)</p>
+                    </td>
+                    <td>
+                        <strong> %i </strong>
+                        <!-- <meter id="fuel" min="0" max="99" low="30" high="70" optimum="80" value="%i">
+                            at 50/100
+                        </meter> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+
+</html>
+
+<html>
